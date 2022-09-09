@@ -8,8 +8,7 @@ const InputText = (props) => {
   };
 
   return (
-    <div className="input-text input">
-      <label className="form-label" htmlFor="">{props.label}:</label>
+    <div className="input-text">      
       <input
         onChange={onChangeHandler}
         value={props.value}

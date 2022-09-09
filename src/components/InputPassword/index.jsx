@@ -1,3 +1,5 @@
+import './InputPassword.css'
+
 const InputPassword = (props) =>{
     const onChangeHandler = (event) => {
         console.log(event.target.value);
@@ -6,8 +8,7 @@ const InputPassword = (props) =>{
       };
 
     return(
-        <div className="input">
-        <label htmlFor="">{props.label}:</label>
+        <div className="input-password">
         <input
           onChange={onChangeHandler}
           value={props.value}

@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import MyRoutes from "./routes/index";
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <header className="App-header"></header>
       <BrowserRouter>
         <MyRoutes />

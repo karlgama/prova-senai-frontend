@@ -1,0 +1,55 @@
+.loginForm {
+  margin-top: 20vh;
+  width: 19vw;
+  height: 40vh;
+  box-sizing: border-box;
+  background-color: rgb(32, 32, 36);
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 5px;
+  padding: 32px;
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  max-width: 352px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: inherit;
+  height: 100%;
+}
+
+.loginForm .inputs {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+  background: rgb(32, 32, 36, 0);
+}
+.loginForm h1 {
+  color: rgb(225, 225, 230);
+  background-color: inherit;
+  margin-bottom: 2rem;
+}
+.link {
+  text-align: center;
+  background-color: inherit;
+  font-size: 14px;
+  margin-top: 24px;
+}
+.link a {
+  text-decoration: none;
+  background-color: inherit;
+  color: rgb(50 93 223);
+  margin-left: 5px;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.link a:hover{
+  color: rgb(50 93 223);
+  opacity: 1;
+}

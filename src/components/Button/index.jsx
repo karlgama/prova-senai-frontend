@@ -1,6 +1,8 @@
+import './Button.css'
+
 const Button = (props) =>{
     return(
-        <button className="btn mybtn" onClick={props.onClick}>
+        <button className={props.className} onClick={props.onClick}>
             {props.title}
         </button>
     )

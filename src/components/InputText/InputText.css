@@ -1,3 +1,21 @@
-.input-text label{
-    width: 10em;
+.input-text{                                                                                                
+    width: 352px;
+    background-color: rgb(18, 18, 20);
+    box-sizing: border-box;
+}
+
+.input-text input{
+    height: 50px;
+    font-size: 16px;
+    border: solid 1px;
+    width: 100%;
+    background-color: rgb(18, 18, 20);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.input-text input:focus{
+    border-color: rgb(50 93 223);
 }
