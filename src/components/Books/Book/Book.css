@@ -1,0 +1,15 @@
+.book {
+  background-color: rgb(51, 43, 43);
+  height: 400px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book h3,
+p {
+  background-color: inherit;
+}

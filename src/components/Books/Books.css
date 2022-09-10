@@ -3,15 +3,22 @@
   width: 100vw;
   background-color: #efefef;
   /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
+/* flex-direction: column; */
+/* flex-wrap: wrap; */
 /* } */
 
 /* .books .mybtn:hover {
   background-color: #555555;
 } */
 
-/* .bookHeader {
+.bookHeader {
   display: flex;
-  justify-content: space-between;
-}  */
+  justify-content: space-evenly;
+  height: 5rem;
+  width: 480px;
+  padding: 50px;
+}
+.bookHeader .btn {
+  max-width: 50%;
+  margin: 0;
+}

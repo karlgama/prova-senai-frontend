@@ -29,7 +29,11 @@ export default function Books() {
     <div className="books container">
       <div className="bookHeader">
         <h1>Livros</h1>
-        <Button title="cadastrar novo livro" onClick={registerBook} />
+        <Button
+          className="btn btn-book"
+          title="cadastrar novo livro"
+          onClick={registerBook}
+        />
       </div>
       {books.length === 0
         ? "Parece que não tem nenhum livro cadastrado ainda"
