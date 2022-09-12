@@ -1,7 +1,7 @@
 .book-register {
   margin-top: 20vh;
   width: 19vw;
-  height: 40vh;
+  height: 60vh;
   box-sizing: border-box;
   background-color: rgb(32, 32, 36);
   align-items: center;
@@ -24,4 +24,17 @@
 .book-register h1 {
   background-color: inherit;
   margin-bottom: 1rem;
+}
+
+.inputs img {
+  width: 120px;
+  background-color: inherit;
+  height: 120px;
+}
+
+.inputs .images-preview {
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
