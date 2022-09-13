@@ -9,9 +9,9 @@ import { DropContainer, UploadMessage } from "./styles";
 import ImagePreview from "../ImagePreview";
 
 const BookRegister = (props) => {
-  // const [imgPeq, setImgPeq] = useState(null);
-  // const [imgGrd, setImgGrd] = useState(null);
-  const [uploadFiles, setUploadFiles] = useState([]);
+  const [imgPeq, setImgPeq] = useState(null);
+  const [imgGrd, setImgGrd] = useState(null);
+  // const [uploadFiles, setUploadFiles] = useState([]);
   const [titulo, setTitulo] = useState("");
   const [preco, setPreco] = useState();
   const [detalhes, setDetalhes] = useState("");
@@ -26,6 +26,7 @@ const BookRegister = (props) => {
         preview: URL.createObjectURL(files[0]),
       };
       images.push(imgP);
+      setImgPeq(files[0]);
     }
     if (files[1]) {
       const imgP = {
@@ -33,13 +34,13 @@ const BookRegister = (props) => {
         preview: URL.createObjectURL(files[1]),
       };
       images.push(imgP);
+      setImgGrd(files[1]);
     }
-    setUploadFiles([files[0], files[1]]);
     setPreviews(images);
   };
 
   const saveBook = async () => {
-    const book = { uploadFiles, titulo, preco, detalhes };
+    const book = { imgPeq, imgGrd, titulo, preco, detalhes };
     console.log("salvar", book);
     await save(book);
     navigate("/books");
@@ -74,7 +75,7 @@ const BookRegister = (props) => {
           setValue={setPreco}
           placeholder="Digite o preço do livro"
         />
-        <Dropzone accept="image/*" onDropAccepted={handleUpload}>
+        <Dropzone maxFiles={2} accept="image/*" onDropAccepted={handleUpload}>
           {({ getRootProps, getInputProps, isDragActive, isDragReject }) => (
             <DropContainer
               {...getRootProps()}
