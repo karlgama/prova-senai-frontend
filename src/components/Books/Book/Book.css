@@ -1,7 +1,10 @@
 .book {
   background-color: rgb(51, 43, 43);
   height: 400px;
+  min-width: 300px;
+  max-width: 800px;
   box-sizing: border-box;
+  padding: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -13,3 +16,20 @@
 p {
   background-color: inherit;
 }
+
+.book .btn {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.book .imgGrd{
+  width: 200px;
+  height: 200px;
+}
+
+.book .imgGrd img{
+  width: 100%;
+  height: 100%;
+}
+

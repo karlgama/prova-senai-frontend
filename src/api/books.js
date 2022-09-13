@@ -5,7 +5,13 @@ export const listBooks = async () => {
 };
 
 export const save = async (book) => {
-  await api.post("/books", book).then(() => {
-    return true;
-  });
+  await api
+    .post("/books", book, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    })
+    .then(() => {
+      return true;
+    });
 };

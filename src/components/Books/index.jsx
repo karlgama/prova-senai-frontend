@@ -26,7 +26,7 @@ export default function Books() {
   }, []);
 
   return (
-    <div className="books container">
+    <section className="books-section">
       <div className="bookHeader">
         <h1>Livros</h1>
         <Button
@@ -35,9 +35,11 @@ export default function Books() {
           onClick={registerBook}
         />
       </div>
+      <div className="books-container">
       {books.length === 0
         ? "Parece que não tem nenhum livro cadastrado ainda"
-        : books.map((book) => <Book book={book} />)}
-    </div>
+        : books.map((book) => <Book key={book.codeLivro} book={book} />)}
+      </div>
+    </section>
   );
 }
